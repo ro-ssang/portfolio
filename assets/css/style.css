@@ -1,0 +1,51 @@
+/* layouts */
+#contents {
+}
+#section1 {
+  height: 100vh;
+  background: #dddad8;
+}
+#section2 {
+  height: 2000px;
+  background: #000;
+}
+#section3 {
+}
+#section4 {
+}
+#section5 {
+}
+#section6 {
+}
+
+/* sec1 */
+.sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #e7544c;
+  font-family: 'house';
+}
+.sec1 .left {
+  flex: 0 0 50%;
+  text-align: right;
+}
+.sec1 .right {
+  flex: 0 0 50%;
+  text-align: left;
+}
+.sec1 em {
+  display: block;
+  color: #000;
+  font-family: 'Cinzel', serif;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.sec1 strong {
+  font-size: 44vw;
+  line-height: 0.81;
+}
+.sec1 .right strong {
+  line-height: 0.71;
+}

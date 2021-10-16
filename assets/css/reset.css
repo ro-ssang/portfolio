@@ -1,0 +1,24 @@
+/* 여백 초기화 */
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/* 폰트 스타일 초기화 */
+em {
+  font-style: normal;
+}
