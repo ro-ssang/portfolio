@@ -2,18 +2,23 @@
 #contents {
 }
 #section1 {
+  /* display: none; */
   height: 100vh;
   background: #dddad8;
 }
 #section2 {
+  /* display: none; */
   height: 100vh;
   background: #232325;
 }
 #section3 {
-  height: 2000px;
-  background: #dddad8;
+  /* display: none; */
+  height: 100vh;
+  background: #232325;
 }
 #section4 {
+  height: 2000px;
+  background: #dddad8;
 }
 #section5 {
 }
@@ -55,28 +60,90 @@
 /* sec2 */
 .sec2 {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  padding: 0 6vw;
   height: 100vh;
 }
-.sec2 strong {
-  display: block;
-  position: relative;
-  padding-top: 4vw;
+.sec2 .left {
   flex: 0 0 50%;
+}
+.sec2 .right {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sec2 .right strong {
+  position: relative;
   color: #c5f0c6;
   font-family: 'house';
-  font-size: 55vw;
-  line-height: 1;
-  text-align: center;
+  font-size: 50vw;
 }
-.sec2 strong:before {
+.sec2 .right strong::before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 8%;
+  left: -59%;
+  top: 15%;
   width: 1px;
-  height: 84%;
+  height: 70%;
+  background-color: #c5f0c6;
+  transform: rotateZ(14deg);
+}
+
+/* sec3 */
+.sec3 {
+  display: flex;
+  padding: 0 6vw;
+  height: 100vh;
+  color: #f4f1ee;
+}
+.sec3 .left {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec3 .left h2 {
+  margin-bottom: 3vw;
+  width: 70%;
+  font-size: 7vw;
+  font-family: 'Cinzel', serif;
+  font-weight: 100;
+  line-height: 0.91;
+  text-transform: uppercase;
+}
+.sec3 .left p {
+  width: 58%;
+  font-size: 0.8vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.sec3 .right {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sec3 .right strong {
+  position: relative;
+  color: #232325;
+  font-family: 'house';
+  font-size: 50vw;
+
+  /* gradient text stroke for chrome */
+  background: -webkit-linear-gradient(-70deg, #a4c0a5 20%, #424a45 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+.sec3 .right strong::before {
+  content: '';
+  position: absolute;
+  left: -59%;
+  top: 15%;
+  width: 1px;
+  height: 70%;
   background-color: #c5f0c6;
   transform: rotateZ(14deg);
 }
