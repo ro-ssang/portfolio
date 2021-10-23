@@ -48,3 +48,8 @@ a:hover {
 em {
   font-style: normal;
 }
+
+/* 반응형 이미지 */
+img {
+  width: 100%;
+}

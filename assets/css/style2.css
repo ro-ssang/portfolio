@@ -5,6 +5,19 @@
     src: url(../fonts/house.woff) format('woff');
     font-display: swap;
 }
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* container */
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* layout */
 #contents {}
@@ -13,10 +26,12 @@
     background: #DDDAD8;
 }
 #section2 {
-    height: 2000px;
-    background: #000;
+    background: #232326;
 }
-#section3 {}
+#section3 {
+    height: 2000px;
+    background: #DDDAD8;
+}
 #section4 {}
 #section5 {}
 #section6 {}
@@ -52,4 +67,73 @@
 }
 .sec1 .right strong {
     line-height: .71;
+}
+
+
+/* sec2 */
+.sec2 {
+    padding-bottom: 150px;
+}
+.sec2 .num {
+    color:#B9F2C3;
+    font-family: 'house', serif;
+    font-size: 44vw;
+    text-align: right;
+    position: sticky;
+}
+.sec2 .intro {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.sec2 .intro .left {
+    flex: 0 0 40%;
+    font-family: 'Cinzel', serif;
+    font-size: 8vw;
+    line-height: .91;
+    text-transform: uppercase;
+}
+.sec2 .intro .right {
+    flex: 0 0 28%;
+    font-family: 'GowunBatang-Regular';
+    text-align: justify;
+}
+.sec2 .intro .right div {
+    margin-bottom: 30px;
+}
+.sec2 .intro .right img {
+    width: 100%;
+}
+
+
+
+.sec3 {
+    padding-bottom: 150px;
+}
+.sec3 .num {
+    color:#E7544C;
+    font-family: 'house', serif;
+    font-size: 44vw;
+    text-align: right;
+    position: sticky;
+}
+.sec3 .intro {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+.sec3 .intro .left {
+    flex: 0 0 40%;
+    font-family: 'Cinzel', serif;
+    font-size: 8vw;
+    line-height: .91;
+    text-transform: uppercase;
+}
+.sec3 .intro .right {
+    flex: 0 0 28%;
+    font-family: 'GowunBatang-Regular';
+    text-align: justify;
+}
+.sec3 .intro .right div {
+    margin-bottom: 30px;
 }
