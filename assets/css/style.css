@@ -108,7 +108,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 20vh;
+  padding-top: 10vh;
   height: 100vh;
   color: #fff;
   background-image: linear-gradient(to bottom, rgba(35, 35, 38, 0.1) 0%, #232326 90%);
@@ -172,7 +172,7 @@
 .sec3 .intro {
   display: flex;
   justify-content: space-between;
-  padding-top: 20vh;
+  padding-top: 10vh;
   height: 100vh;
   color: #000;
   box-sizing: border-box;
@@ -195,103 +195,214 @@
 
 /* sec4 */
 .sec4 {
-  padding: 3vw 0;
+  padding-bottom: 13vw;
   color: #fff;
-  height: 100%;
 }
-.sec4 .tit {
-  top: 3vw;
-  display: flex;
-  justify-content: center;
-  padding-top: 1vw;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+.sec4 .header {
+  position: relative;
+  padding-top: 2vw;
 }
-.sec4 .tit h2 {
+.sec4 .header .tit {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
   font-family: 'house', serif;
   font-size: 23.5vw;
   line-height: 0.81;
+  text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
 }
-.sec4 .cont {
+.sec4 .header .tit.outlined {
+  position: relative;
+  display: block;
+  margin-top: -1px;
+  margin-bottom: 32px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #fff;
+  -moz-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
+}
+.sec4 .header .text {
   display: flex;
   justify-content: space-between;
-  margin-top: 2vw;
-  padding: 0 3vw;
+  margin: 0 3vw;
 }
-.sec4 .cont .left {
+.sec4 .header .text .left {
   flex: 0 0 30%;
   font-family: 'GowunBatang-Regular';
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
-.sec4 .cont .left em {
+.sec4 .header .text .left em {
+  display: inline-block;
+  margin-bottom: 0.6vw;
   font-family: 'Cinzel', serif;
-  font-size: 3vw;
+  font-size: 2.5vw;
+  line-height: 1.1;
   text-transform: uppercase;
 }
-.sec4 .cont .img {
-  flex: 0 0 36%;
-  margin-right: 16px;
+.sec4 .header .text .right {
+  flex: 0 0 30%;
+  font-family: 'GowunBatang-Regular';
+  font-size: 1vw;
+  word-break: keep-all;
+}
+.sec4 .img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+}
+.sec4 .img img {
+  width: 30%;
   padding: 10px;
   background: #fff;
-}
-.sec4 .cont .right {
-  flex: 0 0 28%;
-  font-family: 'GowunBatang-Regular';
 }
 
 /* sec5 */
 .sec5 {
-  padding: 3vw 0;
+  padding-bottom: 13vw;
   color: #fff;
-  height: 100%;
 }
-.sec5 .tit {
-  top: 3vw;
-  display: flex;
-  justify-content: center;
-  padding-top: 1vw;
+.sec5 .header {
+  position: relative;
+  padding-top: 2vw;
+}
+.sec5 .header .tit {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  font-family: 'house', serif;
+  font-size: 21vw;
+  line-height: 0.81;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.sec5 .header .tit.outlined {
+  position: relative;
+  display: block;
+  margin-top: -1px;
+  margin-bottom: 32px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #fff;
+  -moz-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
 }
-.sec5 .tit h2 {
-  font-family: 'house', serif;
-  font-size: 21.5vw;
-  line-height: 0.81;
-  text-transform: uppercase;
-}
-.sec5 .cont {
+.sec5 .header .text {
   display: flex;
   justify-content: space-between;
-  margin-top: 2vw;
-  padding: 0 3vw;
+  margin: 0 3vw;
 }
-.sec5 .cont .left {
+.sec5 .header .text .left {
   flex: 0 0 30%;
   font-family: 'GowunBatang-Regular';
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
-.sec5 .cont .left em {
+.sec5 .header .text .left em {
   display: inline-block;
   margin-bottom: 0.6vw;
   font-family: 'Cinzel', serif;
-  font-size: 2.8vw;
-  text-transform: uppercase;
+  font-size: 2.5vw;
   line-height: 1.1;
+  text-transform: uppercase;
 }
-.sec5 .cont .img {
-  flex: 0 0 36%;
-  margin-right: 16px;
+.sec5 .header .text .right {
+  flex: 0 0 30%;
+  font-family: 'GowunBatang-Regular';
+  font-size: 1vw;
+  word-break: keep-all;
+}
+.sec5 .img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+}
+.sec5 .img img {
+  width: 30%;
   padding: 10px;
   background: #fff;
-}
-.sec5 .cont .right {
-  flex: 0 0 28%;
-  font-family: 'GowunBatang-Regular';
 }
 
 /* sec6 */
 .sec6 {
+  padding-bottom: 18vw;
+  color: #1a2b70;
+}
+.sec6 .header {
+  position: relative;
+  padding-top: 2vw;
+}
+.sec6 .header .tit {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  font-family: 'house', serif;
+  font-size: 29.5vw;
+  line-height: 0.81;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.sec6 .header .tit.outlined {
+  position: relative;
+  display: block;
+  margin-top: -1px;
+  margin-bottom: 32px;
+  border-top: 1px solid #1a2b70;
+  border-bottom: 1px solid #1a2b70;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-stroke-color: #1a2b70;
+  -webkit-text-stroke-color: #1a2b70;
+  -moz-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 1px;
+}
+.sec6 .header .text {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3vw;
+}
+.sec6 .header .text .left {
+  flex: 0 0 30%;
+  font-family: 'GowunBatang-Regular';
+  font-size: 1.3vw;
+}
+.sec6 .header .text .left em {
+  display: inline-block;
+  margin-bottom: 0.6vw;
+  font-family: 'Cinzel', serif;
+  font-size: 2.5vw;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.sec6 .header .text .right {
+  flex: 0 0 30%;
+  font-family: 'GowunBatang-Regular';
+  font-size: 1vw;
+  word-break: keep-all;
+}
+.sec6 .img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 11;
+}
+.sec6 .img img {
+  width: 30%;
+  padding: 10px;
+  background: #fff;
+}
+/* .sec6 {
   padding: 3vw 0;
   color: #1a2b70;
   height: 100%;
@@ -337,7 +448,7 @@
 .sec6 .cont .right {
   flex: 0 0 28%;
   font-family: 'GowunBatang-Regular';
-}
+} */
 
 /* sec7 */
 .sec7 {
@@ -376,7 +487,7 @@
 .sec7 .intro {
   display: flex;
   justify-content: space-between;
-  padding-top: 20vh;
+  padding-top: 10vh;
   height: 100vh;
   color: #fff;
   box-sizing: border-box;
