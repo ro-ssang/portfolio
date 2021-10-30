@@ -29,7 +29,7 @@
     background: #232326;
 }
 #section3 {
-    height: 2000px;
+    height: 100vh;
     background: #DDDAD8;
 }
 #section4 {}
@@ -72,68 +72,70 @@
 
 /* sec2 */
 .sec2 {
+    position: relative;
     padding-bottom: 150px;
 }
-.sec2 .num {
+.sec2 .site {
+    height: 400vh;
+    display: flex;
+}
+.sec2 .site:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.sec2 .site .num {
+    flex: 0 0 30%;
     color:#B9F2C3;
     font-family: 'house', serif;
-    font-size: 44vw;
-    text-align: right;
+    font-size: 40vw;
+    line-height: 1;
     position: sticky;
+    top: 0;
+    height: 30vw;
+    z-index: 1000;
+
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #0D47A1; */
 }
-.sec2 .intro {
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-}
-.sec2 .intro .left {
-    flex: 0 0 40%;
-    font-family: 'Cinzel', serif;
-    font-size: 8vw;
-    line-height: .91;
-    text-transform: uppercase;
-}
-.sec2 .intro .right {
-    flex: 0 0 28%;
-    font-family: 'GowunBatang-Regular';
-    text-align: justify;
-}
-.sec2 .intro .right div {
-    margin-bottom: 30px;
-}
-.sec2 .intro .right img {
-    width: 100%;
+.sec2 .site .board {
+    flex: 0 0 70%;
+    background: red;
 }
 
 
 
+
+
+
+
+/* sec3 */
 .sec3 {
-    padding-bottom: 150px;
-}
-.sec3 .num {
-    color:#E7544C;
-    font-family: 'house', serif;
-    font-size: 44vw;
-    text-align: right;
-    position: sticky;
-}
-.sec3 .intro {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    color: #000;
+    align-items: center;
+    justify-content: center;
+    font-family: 'house';
+    color: #E7544C;
 }
-.sec3 .intro .left {
-    flex: 0 0 40%;
+.sec3 .left {
+    flex: 0 0 50%;
+    text-align: right;
+}
+.sec3 .right {
+    flex: 0 0 50%;
+    text-align: left;
+}
+.sec3 em {
+    display: block;
+    font-size: 3vw;
     font-family: 'Cinzel', serif;
-    font-size: 8vw;
-    line-height: .91;
+    color:#000;
     text-transform: uppercase;
 }
-.sec3 .intro .right {
-    flex: 0 0 28%;
-    font-family: 'GowunBatang-Regular';
-    text-align: justify;
+.sec3 strong {
+    font-size: 44vw;
+    line-height: .81;
 }
-.sec3 .intro .right div {
-    margin-bottom: 30px;
+.sec3 .right strong {
+    line-height: .71;
 }
