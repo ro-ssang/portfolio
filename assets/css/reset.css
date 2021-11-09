@@ -23,8 +23,7 @@ body,
 input,
 textarea {
   color: #fff;
-  font-family: 'S-CoreDream-3Light';
-  font-weight: 200;
+  font-family: 'S-CoreDream-2ExtraLight';
 }
 
 /* 제목 태그 초기화 */
@@ -45,7 +44,7 @@ li {
 
 /* a 태그 초기화 */
 a {
-  color: #222;
+  color: #fff;
   text-decoration: none;
 }
 a:hover {

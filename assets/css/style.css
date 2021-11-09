@@ -7,6 +7,7 @@
 }
 #section2 {
   position: relative;
+  /* display: none; */
   background: url(../img/bg02.png) no-repeat top center;
   background-color: #121313;
 }
@@ -19,12 +20,27 @@
   height: 100vh;
   background: linear-gradient(#121313, transparent), linear-gradient(transparent, #121313);
 }
+#section3 {
+  position: relative;
+  /* display: none; */
+  background: url(../img/bg03.png) no-repeat top center;
+  background-color: #121313;
+}
+#section3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 103.5vh;
+  background: linear-gradient(#121313, transparent), linear-gradient(transparent 50%, #121313 100%);
+}
 
 /* container */
 .container {
   margin: 0 auto;
   max-width: 1500px;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 /* sec1 */
@@ -55,20 +71,18 @@
 
 /* sec2 */
 .sec2 {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 80vh;
-  background-color: transparent;
 }
 .sec2 .tit {
-  position: relative;
   margin-left: 3%;
   margin-bottom: 92px;
   font-family: 'miracle';
   font-size: 130px;
   line-height: 0.938;
   text-transform: uppercase;
-  z-index: 20;
 }
 .sec2 .intro {
   align-self: flex-end;
@@ -132,4 +146,148 @@
   color: #dcd1ba;
   font-size: 128px;
   line-height: 0.938;
+}
+
+/* sec3 */
+.sec3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.sec3 .tit {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  height: 102vh;
+  font-size: 130px;
+  font-family: 'miracle';
+  text-transform: uppercase;
+}
+.sec3 .divider {
+  position: relative;
+  display: block;
+  margin-bottom: 100px;
+  padding-top: 102px;
+  padding-bottom: 238px;
+  /* background: #ddd; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.433;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sec3 .divider::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 1px;
+  height: 186px;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.sec3 .site {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+}
+.sec3 .site:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.sec3 .site .proj_tit {
+  position: absolute;
+  top: 7%;
+  /* background: #aaa; */
+  font-size: 130px;
+  font-family: 'miracle';
+  line-height: 0.938;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 10;
+}
+.sec3 .site .img {
+  flex: 0 0 56%;
+  /* background: #bbb; */
+  z-index: 20;
+}
+.sec3 .site .info {
+  flex: 0 0 37%;
+  padding-top: 140px;
+  /* background: #ccc; */
+  z-index: 20;
+}
+.sec3 .site .info .desc {
+  font-size: 20px;
+  line-height: 1.665;
+}
+.sec3 .site .info .skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.sec3 .site .info .skills li {
+  position: relative;
+  margin-right: 6px;
+  padding: 7px 20px 7px 46px;
+  border-radius: 50px;
+  background-color: #000;
+  font-size: 16px;
+  line-height: 1.665;
+}
+.sec3 .site .info .skills li::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+.sec3 .site .info .skills li:nth-child(1)::before {
+  background-image: url(../img/html5.png);
+}
+.sec3 .site .info .skills li:nth-child(2)::before {
+  background-image: url(../img/css3.png);
+}
+.sec3 .site .info .skills li:nth-child(3)::before {
+  background-image: url(../img/jquery.png);
+}
+.sec3 .site .info .btns {
+  display: flex;
+  margin-top: 31px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sec3 .site .info .btns li {
+  margin-right: 7px;
+}
+.sec3 .site .info .btns li:last-child {
+  margin-right: 0;
+}
+.sec3 .site .info .btns a {
+  display: block;
+  padding: 11px 0;
+  width: 181px;
+  border: 1px solid #fff;
+  font-family: 'S-CoreDream-3Light';
+  line-height: 1.665;
+}
+
+/* site1 */
+.sec3 .site1 .proj_tit {
+  left: 21%;
+}
+
+/* site2 */
+.sec3 .site2 .proj_tit {
+  left: -3%;
+}
+
+/* site3 */
+.sec3 .site3 .proj_tit {
+  right: -5%;
 }
