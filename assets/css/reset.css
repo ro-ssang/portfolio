@@ -23,6 +23,8 @@ body,
 input,
 textarea {
   color: #fff;
+  font-family: 'S-CoreDream-3Light';
+  font-weight: 200;
 }
 
 /* 제목 태그 초기화 */
