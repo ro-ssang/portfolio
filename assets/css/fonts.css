@@ -12,3 +12,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'miracle';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/Miracle.otf) format('otf');
+  font-display: swap;
+}

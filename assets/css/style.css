@@ -2,319 +2,38 @@
 #contents {
 }
 #section1 {
-  /* display: none; */
-  height: 100vh;
-  background: #dfdbd8;
-}
-#section2 {
-  /* display: none; */
-  background: #d6d0ca;
-}
-#section3 {
-  /* display: none; */
-  background: #e3e0dd;
-}
-#section4 {
-  /* display: none; */
-  background: #232325;
-}
-#section5 {
-  background: #232325;
+  background: #121313;
 }
 
 /* container */
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1400px;
+  width: 1400px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* sec1 */
 .sec1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  color: #e7544c;
-  font-family: 'house';
-}
-.sec1 .left {
-  flex: 0 0 50%;
-  text-align: right;
-}
-.sec1 .right {
-  flex: 0 0 50%;
-  text-align: left;
-}
-.sec1 em {
-  display: block;
-  color: #000;
-  font-family: 'Cinzel', serif;
-  font-size: 3vw;
-  text-transform: uppercase;
-}
-.sec1 strong {
-  font-size: 44vw;
-  line-height: 0.81;
-}
-.sec1 .right strong {
-  line-height: 0.71;
-}
-
-/* sec2 */
-.sec2 {
-  display: flex;
-  justify-content: space-between;
-  padding: 6vw 0;
-}
-.sec2 .img {
-  flex: 0 0 38%;
-}
-.sec2 .img img {
-  display: block;
-}
-.sec2 .cont {
-  flex: 0 0 53%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 8vw 0;
-  color: #232326;
-  font-family: 'GowunBatang-Regular';
-}
-.sec2 .cont .tit {
-  padding-bottom: 3vw;
-  width: 100%;
-  font-size: 6.1vw;
-  border-bottom: 1px solid #232326;
-  font-family: 'Cinzel', serif;
-  text-align: right;
-  text-transform: uppercase;
-}
-.sec2 .cont .desc {
-  width: 81%;
-  font-size: 1.1vw;
-  line-height: 1.6;
-}
-
-/* sec3 */
-.sec3 {
-  display: flex;
-  justify-content: space-between;
-  padding: 19vw 0;
-  padding-left: 3vw;
-  color: #232326;
-  font-family: 'Cinzel', serif;
-  /* background: #bbb; */
-}
-.sec3 .tit {
-  flex: 0 0 40%;
-  padding-top: 4vw;
-  /* background: #ccc; */
-  font-size: 6.1vw;
-  line-height: 1;
-  text-transform: uppercase;
-}
-.sec3 .cont {
-  flex: 0 0 52%;
-  /* background: #ddd; */
-  font-family: 'GowunBatang-Regular';
-}
-.sec3 .cont .sub-tit {
-  padding-bottom: 3vw;
-  font-size: 2.7vw;
-  line-height: 1.2;
-  text-transform: uppercase;
-  border-bottom: 1px solid #232326;
-}
-.sec3 .cont .proj {
-  padding-top: 0.8vw;
-  /* background: #eee; */
-  font-size: 1.5vw;
-}
-.sec3 .cont .proj em {
-  color: #797776;
-  font-size: 1vw;
-}
-
-/* sec4 */
-.sec4 {
-}
-.sec4 .site {
-  display: flex;
-  justify-content: space-between;
-  padding: 6vw 0 6vw 0;
-  /* min-height: 200vh; */
-}
-.sec4 .site:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.sec4 .site .num {
-  flex: 0 0 25%;
-  position: sticky;
-  top: 0;
-  padding-top: 1vw;
-  height: 23.3vw;
-  /* background: rgba(0, 0, 0, 0.2); */
-  color: #b9f2c3;
-  font-family: 'house', serif;
-  font-size: 30vw;
-  line-height: 0.8;
-  text-align: center;
-}
-.sec4 .site .cont {
-  flex: 0 0 73%;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 2.5vw;
-  color: #f4f1ee;
-  /* background: rgba(0, 0, 0, 0.6); */
-  box-sizing: border-box;
-  font-family: 'GowunBatang-Regular';
-}
-.sec4 .site:nth-child(even) .cont {
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-.sec4 .site .cont .skills {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 1vw;
-}
-.sec4 .site .cont .skills li {
-  font-size: 0.97vw;
-  margin-right: 1vw;
-  padding: 0.1vw 0.5vw;
-  border: 1px solid #aaa;
-}
-.sec4 .site .cont .tit {
-  padding-top: 2.4vw;
-  padding-bottom: 4vw;
-  border-bottom: 1px solid #f4f1ee;
-  font-family: 'Cinzel', serif;
-  font-size: 4.8vw;
-  line-height: 0.91;
-  text-transform: uppercase;
-}
-.sec4 .site .cont .desc {
-  padding-top: 1vw;
-  width: 95%;
-  font-size: 1.1vw;
-  line-height: 1.8;
-}
-.sec4 .site .cont .details {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 4vw;
-}
-.sec4 .site .cont .details:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-.sec4 .site .cont .details .img {
-  flex: 0 0 52%;
-  margin-right: 3%;
-  height: 30vw;
-  background: rgba(255, 255, 255, 0.1);
-}
-.sec4 .site .cont .details:nth-child(odd) .img {
-  margin-right: 0;
-  margin-left: 3%;
-}
-.sec4 .site .cont .details .feature {
-  display: flex;
-  align-items: center;
-  flex: 0 0 40%;
-  height: 30vw;
-  /* background: #888; */
-  font-size: 1vw;
-  line-height: 1.8;
-}
-
-/* site1 */
-.site1 {
-}
-
-/* sec5 */
-.sec5 {
-  display: flex;
-  justify-content: space-between;
-  padding: 10vw 0;
-  color: #f4f1ee;
-}
-.sec5 .left {
-  flex: 0 0 42%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  /* background: #ccc; */
-  font-family: 'Cinzel', serif;
-  text-transform: uppercase;
-  text-align: right;
-}
-.sec5 .left h2 {
-  width: 100%;
-  font-size: 2.4vw;
-}
-.sec5 .left h2 em {
   position: relative;
-  display: block;
-  margin-top: 1vw;
-  padding-top: 1vw;
-  font-size: 4.6vw;
-  width: 100%;
-}
-.sec5 .left h2 em::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #f4f1ee;
-}
-.sec5 .right {
-  flex: 0 0 43%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding-left: 2vw;
-  /* background: #ddd; */
-  font-family: 'GowunBatang-Regular';
+  min-height: 100vh;
+}
+.sec1 .img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 415px;
+  height: 657px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.sec1 .tit {
+  font-family: 'miracle';
+  font-size: 180px;
+  text-align: center;
   text-transform: uppercase;
-}
-.sec5 .right form {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
-.sec5 .right label {
-  padding-left: 0.4vw;
-  padding-bottom: 0.4vw;
-  font-size: 0.91vw;
-}
-.sec5 .right input {
-  margin-bottom: 1vw;
-  padding: 0.5vw 0.4vw;
-  font-size: 1vw;
-  font-family: 'GowunBatang-Regular';
-  background-color: #f4f1ee;
-}
-.sec5 .right input::placeholder {
-  font-size: 0.96vw;
-}
-.sec5 .right textarea {
-  margin-bottom: 2vw;
-  padding: 0.5vw 0.4vw;
-  height: 200px;
-  background-color: #f4f1ee;
-  font-family: 'GowunBatang-Regular';
-}
-.sec5 .right button {
-  padding: 0.8vw 0;
-  font-size: 1.1vw;
-  font-family: 'GowunBatang-Regular';
-  text-transform: uppercase;
-  cursor: pointer;
+  z-index: 20;
 }
