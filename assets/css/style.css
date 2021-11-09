@@ -10,6 +10,7 @@
   /* display: none; */
   background: url(../img/bg02.png) no-repeat top center;
   background-color: #121313;
+  background-size: contain;
 }
 #section2::before {
   content: '';
@@ -25,6 +26,7 @@
   /* display: none; */
   background: url(../img/bg03.png) no-repeat top center;
   background-color: #121313;
+  background-size: contain;
 }
 #section3::before {
   content: '';
@@ -32,7 +34,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 103.5vh;
+  height: 100vh;
   background: linear-gradient(#121313, transparent), linear-gradient(transparent 50%, #121313 100%);
 }
 #section4 {
@@ -40,6 +42,7 @@
   /* display: none; */
   background: url(../img/bg04.png) no-repeat top center;
   background-color: #121313;
+  background-size: contain;
 }
 #section4::before {
   content: '';
@@ -47,7 +50,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 103.5vh;
+  height: 100vh;
   background: linear-gradient(#121313, transparent), linear-gradient(transparent 50%, #121313 100%);
 }
 #section5 {
@@ -55,6 +58,7 @@
   /* display: none; */
   background: url(../img/bg05.png) no-repeat top center;
   background-color: #121313;
+  background-size: contain;
 }
 #section5::before {
   content: '';
@@ -310,7 +314,7 @@
 
 /* site1 */
 .sec3 .site1 .proj_tit {
-  left: 21%;
+  right: -5%;
 }
 
 /* site2 */
@@ -455,10 +459,10 @@
   background-image: url(../img/react-router-dom.png);
 }
 .sec4 .site1 .info .skills li:nth-child(3)::before {
-  background-image: url(../img/styled-components.png);
+  background-image: url(../img/axios.png);
 }
 .sec4 .site1 .info .skills li:nth-child(4)::before {
-  background-image: url(../img/axios.png);
+  background-image: url(../img/styled-components.png);
 }
 .sec4 .site1 .info .skills li:nth-child(5)::before {
   background-image: url(../img/redux.png);
