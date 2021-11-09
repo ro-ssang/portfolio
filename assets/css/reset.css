@@ -21,7 +21,8 @@ figcaption {
 /* 폰트 초기화 */
 body,
 input,
-textarea {
+textarea,
+button {
   color: #fff;
   font-family: 'S-CoreDream-2ExtraLight';
 }
@@ -47,7 +48,9 @@ a {
   color: #fff;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+a:focus,
+a:focus-within {
   color: #2ecc71;
 }
 
@@ -59,4 +62,14 @@ em {
 /* 반응형 이미지 */
 img {
   width: 100%;
+}
+
+/* 버튼 초기화 */
+button {
+  border: none;
+}
+button:hover,
+button:focus,
+button:focus-within {
+  color: #2ecc71;
 }
