@@ -43,7 +43,7 @@
 }
 #section5 {
   position: relative;
-  display: none;
+  /* display: none; */
   background: url(../img/bg04.png) no-repeat top center;
   background-size: cover;
   z-index: 10;
@@ -695,6 +695,11 @@
 
   /* sec3 */
   .sec3 .tit {
+    font-size: 10.8vw;
+  }
+
+  /* sec5 */
+  .sec5 .tit {
     font-size: 10.8vw;
   }
 }
