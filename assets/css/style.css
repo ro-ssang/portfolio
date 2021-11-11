@@ -23,7 +23,7 @@
 }
 #section3 {
   position: relative;
-  display: none;
+  /* display: none; */
   background: url(../img/bg03.png) no-repeat top center;
   background-size: cover;
 }
@@ -199,7 +199,7 @@
 .sec3 .tit {
   display: flex;
   align-items: center;
-  padding-left: 10%;
+  padding-left: 8%;
   height: 100vh;
   font-size: 130px;
   font-family: 'miracle';
@@ -692,6 +692,11 @@
   .sec2 .profile .avatar {
     width: 34.2vw;
   }
+
+  /* sec3 */
+  .sec3 .tit {
+    font-size: 10.8vw;
+  }
 }
 
 /* 601px ~ 768px */
@@ -700,6 +705,7 @@
 
 /* 481px ~ 600px */
 @media (max-width: 600px) {
+  /* sec2 */
   .sec2 .intro {
     width: 38%;
   }
@@ -707,6 +713,7 @@
 
 /* 0px ~ 480px */
 @media (max-width: 480px) {
+  /* sec2 */
   .sec2 .tit {
     margin-left: 4%;
   }
