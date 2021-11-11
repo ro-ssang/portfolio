@@ -7,7 +7,7 @@
 }
 #section2 {
   position: relative;
-  display: none;
+  /* display: none; */
   background: url(../img/bg02.png) no-repeat top center;
   background-color: #121313;
   background-size: contain;
@@ -643,13 +643,75 @@
 }
 
 /* media query */
-/* 0 ~ 1200px */
+/* 769px ~ 1200px */
 @media (max-width: 1200px) {
+  /* sec1 */
   .sec1 .bg {
     width: 34.5vw;
     height: 54.5vw;
   }
   .sec1 .tit {
     font-size: 15vw;
+  }
+
+  /* sec2 */
+  .sec2 .tit {
+    margin-bottom: 8vw;
+    font-size: 10.8vw;
+  }
+  .sec2 .intro em {
+    left: -62%;
+    font-size: 3.35vw;
+  }
+  .sec2 .intro p {
+    padding-bottom: 5.5vw;
+    font-size: 1.5vw;
+  }
+  .sec2 .intro p::before {
+    left: 0;
+    top: 1vw;
+    width: 22.4%;
+  }
+  .sec2 .intro .name {
+    font-size: 1.5vw;
+  }
+  .sec2 .profile {
+    margin-top: 19.8vw;
+    padding-bottom: 50vw;
+  }
+  .sec2 .profile .info {
+    margin-right: 11vw;
+  }
+  .sec2 .profile .info span {
+    margin: 1.3vw 0;
+    font-size: 3.4vw;
+  }
+  .sec2 .profile .info em {
+    font-size: 10.8vw;
+  }
+  .sec2 .profile .avatar {
+    width: 34.2vw;
+  }
+}
+
+/* 601px ~ 768px */
+@media (max-width: 768px) {
+}
+
+/* 481px ~ 600px */
+@media (max-width: 600px) {
+  .sec2 .intro {
+    width: 38%;
+  }
+}
+
+/* 0px ~ 480px */
+@media (max-width: 480px) {
+  .sec2 .tit {
+    margin-left: 4%;
+  }
+  .sec2 .intro {
+    margin-right: 11%;
+    width: 42%;
   }
 }
