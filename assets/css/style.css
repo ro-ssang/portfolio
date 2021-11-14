@@ -58,12 +58,12 @@
   background: linear-gradient(#121313, transparent), linear-gradient(transparent 50%, #121313 100%);
 }
 #section6 {
-  display: none;
+  /* display: none; */
   background-color: #121313;
 }
 #section7 {
   position: relative;
-  display: none;
+  /* display: none; */
   background: url(../img/bg05.png) no-repeat top center;
   background-color: #121313;
   background-size: contain;
@@ -82,7 +82,7 @@
 .container {
   margin: 0 auto;
   max-width: 1500px;
-  background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.1); */
 }
 
 /* sec1 */
@@ -414,7 +414,7 @@
   padding-right: 30%;
   min-width: 100%;
   height: 100vh;
-  background-color: #121313;
+  /* background-color: #121313; */
 }
 .sec6 .site:nth-child(even) {
   flex-direction: row-reverse;
@@ -456,6 +456,7 @@
 .sec6 .site .info .skills {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 5px;
   margin-top: 24px;
 }
 .sec6 .site .info .skills li {
@@ -703,6 +704,30 @@
   .sec4 .site .info .btns a {
     font-size: 1.05vw;
   }
+
+  /* sec6 */
+  .sec6 .divider {
+    margin-bottom: 6.5vw;
+    font-size: 1.2vw;
+  }
+  .sec6 .site .img .proj_tit {
+    font-size: 8.7vw;
+  }
+  .sec6 .site .info {
+    padding-top: 1vw;
+  }
+  .sec6 .site .info .desc {
+    font-size: 1.33vw;
+  }
+  .sec6 .site .info .skills li {
+    font-size: 1.05vw;
+  }
+  .sec6 .site .info .skills li::before {
+    top: 0.6vw;
+  }
+  .sec6 .site .info .btns a {
+    font-size: 1.05vw;
+  }
 }
 
 /* 980px ~ 1200px */
@@ -804,6 +829,39 @@
   .sec4 .site3 .img .proj_tit {
     left: 30%;
   }
+
+  /* sec6 */
+  .sec6 .site {
+    flex-direction: column;
+  }
+  .sec6 .site:nth-child(even) {
+    flex-direction: column;
+  }
+  .sec6 .site .img {
+    flex-basis: auto;
+    width: 63%;
+    margin-right: 0;
+  }
+  .sec6 .site:nth-child(even) .img {
+    margin-left: 0;
+  }
+  .sec6 .site .img .proj_tit {
+    top: -16%;
+  }
+  .sec6 .site .info {
+    flex-basis: auto;
+    margin-top: 5%;
+    padding-top: 0;
+    width: 60%;
+  }
+  /* site1 */
+  .sec6 .site1 .img .proj_tit {
+    left: 18%;
+  }
+  /* site2 */
+  .sec6 .site2 .img .proj_tit {
+    right: -9%;
+  }
 }
 
 /* 636px ~ 768px */
@@ -826,6 +884,18 @@
     margin-right: 0;
   }
   .sec4 .site .info .btns a {
+    width: 100%;
+  }
+
+  /* sec6 */
+  .sec6 .site .info .btns {
+    justify-content: space-between;
+  }
+  .sec6 .site .info .btns li {
+    flex: 0 0 48%;
+    margin-right: 0;
+  }
+  .sec6 .site .info .btns a {
     width: 100%;
   }
 }
