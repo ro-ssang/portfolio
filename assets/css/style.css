@@ -2,12 +2,12 @@
 #contents {
 }
 #section1 {
-  /* display: none; */
+  display: none;
   background: #121313;
 }
 #section2 {
   position: relative;
-  /* display: none; */
+  display: none;
   background: url(../img/bg02.png) no-repeat top center;
   background-color: #121313;
   background-size: contain;
@@ -23,7 +23,7 @@
 }
 #section3 {
   position: relative;
-  /* display: none; */
+  display: none;
   background: url(../img/bg03.png) no-repeat top center;
   background-size: cover;
 }
@@ -38,12 +38,12 @@
   z-index: 10;
 }
 #section4 {
-  /* display: none; */
+  display: none;
   background-color: #121313;
 }
 #section5 {
   position: relative;
-  /* display: none; */
+  display: none;
   background: url(../img/bg04.png) no-repeat top center;
   background-size: cover;
   z-index: 10;
@@ -58,7 +58,7 @@
   background: linear-gradient(#121313, transparent), linear-gradient(transparent 50%, #121313 100%);
 }
 #section6 {
-  /* display: none; */
+  display: none;
   background-color: #121313;
 }
 #section7 {
@@ -82,7 +82,7 @@
 .container {
   margin: 0 auto;
   max-width: 1500px;
-  /* background: rgba(255, 255, 255, 0.1); */
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* sec1 */
@@ -569,10 +569,11 @@
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 100px;
+  width: 94%;
 }
 .sec7 .cont .left {
-  flex: 0 0 40%;
-  margin-left: 3%;
+  flex: 0 0 50%;
+  /* margin-left: 3%; */
   /* background: #aaa; */
 }
 .sec7 .cont .left ul {
@@ -606,7 +607,7 @@
 }
 .sec7 .cont .right {
   flex: 0 0 40%;
-  margin-right: 10%;
+  margin-right: 7%;
   /* background: #bbb; */
 }
 .sec7 .cont .right form {
@@ -789,6 +790,20 @@
   .sec5 .tit {
     font-size: 10.8vw;
   }
+
+  /* sec7 */
+  .sec7 .tit {
+    font-size: 10.8vw;
+  }
+  .sec7 .cont {
+    flex-direction: column;
+    margin-top: 9vw;
+  }
+  .sec7 .cont .right {
+    width: 60%;
+    align-self: flex-end;
+    margin-top: 5%;
+  }
 }
 
 /* 769px ~ 980px */
@@ -862,6 +877,13 @@
   .sec6 .site2 .img .proj_tit {
     right: -9%;
   }
+
+  /* sec7 */
+  .sec7 .cont .right {
+    width: 100%;
+    margin-top: 5%;
+    margin-right: 0;
+  }
 }
 
 /* 636px ~ 768px */
@@ -897,6 +919,11 @@
   }
   .sec6 .site .info .btns a {
     width: 100%;
+  }
+
+  /* sec7 */
+  .sec7 .cont .left li a {
+    font-size: 2.3vw;
   }
 }
 
