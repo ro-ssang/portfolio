@@ -23,7 +23,7 @@
     if (scrollTop >= offsetTop) {
       words.forEach((word, idx) => {
         const chars = word.querySelectorAll('span');
-        const seconds = [200, 1700, 1000];
+        const seconds = [0, 800, 400];
 
         chars.forEach((char, index) => {
           setTimeout(() => {
@@ -65,6 +65,42 @@
         avatar.style.transform = `translateY(${offset}px)`;
       }
     });
+  }
+
+  window.addEventListener('scroll', handleScroll);
+})();
+
+// section3
+(function () {
+  const section3 = document.querySelector('.sec3');
+  const secWrapper = section3.closest('#section3');
+  const title = section3.querySelector('.tit');
+
+  // 글자 분리하기
+  const text = title.innerText;
+
+  title.innerHTML = text
+    .split('')
+    .map((char) => `<span aria-hidden="true">${char === ' ' ? '&nbsp;' : char}</span>`)
+    .join('');
+
+  title.setAttribute('aria-label', text);
+
+  function handleScroll() {
+    const scrollTop = window.scrollY;
+    const offsetTop = secWrapper.offsetTop;
+    const innerHeight = window.innerHeight;
+
+    if (scrollTop >= offsetTop - innerHeight / 3) {
+      console.log('start');
+      const chars = title.querySelectorAll('span');
+
+      chars.forEach((char, index) => {
+        setTimeout(() => {
+          char.classList.add('show');
+        }, 30 * index);
+      });
+    }
   }
 
   window.addEventListener('scroll', handleScroll);
