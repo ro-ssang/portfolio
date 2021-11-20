@@ -65,6 +65,7 @@
   const sitesCont = document.querySelector('.sec6 .sites_cont');
   const wrapper = document.querySelector('.sec6 .sites_wrapper');
   const sites = document.querySelectorAll('.sec6 .site');
+  const titles = wrapper.querySelectorAll('.sec6 .proj_tit');
 
   let scrollWidth = 0;
 
@@ -107,6 +108,16 @@
       sites.forEach((site) => (site.style.transform = `translate(${-percent}%, 0%)`));
     } else if (scrollTop > offsetTop + scrollWidth - wHeight) {
       sites.forEach((site) => (site.style.transform = `translate(${-100 * (sites.length - 1)}%, 0%)`));
+    }
+
+    // titles 이질감 효과
+    const offset = (scrollTop - offsetTop) * 0.1;
+
+    if (scrollTop >= offsetTop) {
+      console.log('start');
+      titles.forEach((title) => {
+        title.style.transform = `translateX(${-offset}px)`;
+      });
     }
   });
 })();
