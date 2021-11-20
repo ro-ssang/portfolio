@@ -52,8 +52,17 @@
       const sectionCont = child.closest('#section2');
       const offsetTop = child.offsetTop + sectionCont.offsetTop;
 
+      const avatar = child.querySelector('.avatar');
+
       if (scrollTop >= offsetTop - innerHeight / 2) {
         child.classList.add('show');
+      }
+
+      // 이질감 효과
+      if (avatar && scrollTop >= offsetTop - innerHeight / 2) {
+        const offset = (scrollTop - offsetTop) * 0.1;
+
+        avatar.style.transform = `translateY(${offset}px)`;
       }
     });
   }
