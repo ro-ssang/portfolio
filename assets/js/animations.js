@@ -92,7 +92,41 @@
     const innerHeight = window.innerHeight;
 
     if (scrollTop >= offsetTop - innerHeight / 3) {
-      console.log('start');
+      const chars = title.querySelectorAll('span');
+
+      chars.forEach((char, index) => {
+        setTimeout(() => {
+          char.classList.add('show');
+        }, 30 * index);
+      });
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+})();
+
+// section5
+(function () {
+  const section3 = document.querySelector('.sec5');
+  const secWrapper = section3.closest('#section5');
+  const title = section3.querySelector('.tit');
+
+  // 글자 분리하기
+  const text = title.innerText;
+
+  title.innerHTML = text
+    .split('')
+    .map((char) => `<span aria-hidden="true">${char === ' ' ? '&nbsp;' : char}</span>`)
+    .join('');
+
+  title.setAttribute('aria-label', text);
+
+  function handleScroll() {
+    const scrollTop = window.scrollY;
+    const offsetTop = secWrapper.offsetTop;
+    const innerHeight = window.innerHeight;
+
+    if (scrollTop >= offsetTop - innerHeight / 3) {
       const chars = title.querySelectorAll('span');
 
       chars.forEach((char, index) => {

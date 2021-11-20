@@ -458,6 +458,16 @@
   font-size: 130px;
   text-transform: uppercase;
 }
+/* 나타내기 */
+.sec5 .tit span {
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0, 0.66, 0.38, 1.01);
+  transform: translateX(-100px) rotateZ(-70deg);
+}
+.sec5 .tit span.show {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
 
 /* sec6 */
 .sec6 {
