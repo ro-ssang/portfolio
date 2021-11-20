@@ -52,7 +52,6 @@
     const offset = (scrollTop - offsetTop) * 0.1;
 
     if (scrollTop >= offsetTop) {
-      console.log('start');
       titles.forEach((title) => {
         title.style.transform = `translateX(${-offset}px)`;
       });
@@ -114,7 +113,6 @@
     const offset = (scrollTop - offsetTop) * 0.1;
 
     if (scrollTop >= offsetTop) {
-      console.log('start');
       titles.forEach((title) => {
         title.style.transform = `translateX(${-offset}px)`;
       });
