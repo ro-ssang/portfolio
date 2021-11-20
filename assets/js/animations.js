@@ -1,3 +1,4 @@
+// section1
 (function () {
   const section1 = document.querySelector('.sec1');
   const section1Title = section1.querySelector('.tit');
@@ -22,7 +23,7 @@
     if (scrollTop >= offsetTop) {
       words.forEach((word, idx) => {
         const chars = word.querySelectorAll('span');
-        const seconds = [800, 2300, 1600];
+        const seconds = [200, 1700, 1000];
 
         chars.forEach((char, index) => {
           setTimeout(() => {
@@ -36,4 +37,26 @@
   showText();
 
   // window.addEventListener('scroll', showText);
+})();
+
+// section2
+(function () {
+  const section2 = document.querySelector('.sec2');
+  const children = Array.from(section2.children);
+
+  function handleScroll() {
+    const scrollTop = window.scrollY;
+    const innerHeight = window.innerHeight;
+
+    children.forEach((child) => {
+      const sectionCont = child.closest('#section2');
+      const offsetTop = child.offsetTop + sectionCont.offsetTop;
+
+      if (scrollTop >= offsetTop - innerHeight / 2) {
+        child.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScroll);
 })();
