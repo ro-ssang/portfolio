@@ -1,3 +1,12 @@
+// pre-loader
+(function () {
+  const loader = document.querySelector('#pre-loader');
+
+  setTimeout(() => {
+    loader.classList.add('hidden');
+  }, 2000);
+})();
+
 // section1
 (function () {
   const section1 = document.querySelector('.sec1');
@@ -34,9 +43,9 @@
     }
   }
 
-  showText();
-
-  // window.addEventListener('scroll', showText);
+  setTimeout(() => {
+    showText();
+  }, 2100);
 })();
 
 // section2
