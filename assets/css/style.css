@@ -733,6 +733,26 @@
   background-image: url(../img/styled-components.png);
 }
 
+/* site3 */
+.sec6 .site3 .img .proj_tit {
+  left: 85%;
+}
+.sec6 .site3 .info {
+  padding-top: 77px;
+}
+.sec6 .site3 .info .skills li:nth-child(1)::before {
+  background-image: url(../img/react.png);
+}
+.sec6 .site3 .info .skills li:nth-child(2)::before {
+  background-image: url(../img/react-router-dom.png);
+}
+.sec6 .site3 .info .skills li:nth-child(3)::before {
+  background-image: url(../img/axios.png);
+}
+.sec6 .site3 .info .skills li:nth-child(4)::before {
+  background-image: url(../img/styled-components.png);
+}
+
 /* sec7 */
 .sec7 {
   position: relative;
